@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aiden Kensh — Portfolio</title>
+    <meta name="description" content="Professional Audio Editor, Podcast Editor, and Website Developer. Explore my services and portfolio."/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Background -->
+    <div class="bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid"></div>
+      <div class="noise"></div>
+    </div>
+
+    <!-- Banner -->
+    <div class="top-banner">
+      <div class="top-banner__inner">
+        <span>Welcome!</span> You’ve found Samuel Ajibola's portfolio.
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="nav">
+      <a class="brand" href="#">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Samuel Ajibola</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn btn--sm btn--outline">Contact</a>
+      </nav>
+      <button class="nav__menu" id="menuBtn"><span></span><span></span><span></span></button>
+    </header>
+
+    <!-- Drawer (Mobile) -->
+    <div class="mobile-drawer" id="drawer">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="btn btn--sm btn--outline">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="container">
+        <div class="eyebrow reveal">PORTFOLIO WEBSITE</div>
+        <h1 class="hero__title reveal">
+          I’m Samuel Ajibola
+        </h1>
+        <h2 class="hero__subtitle reveal">
+          Professional Audio Editor, Podcast Producer & Website Developer
+        </h2>
+        <p class="hero__subtitle reveal">
+          I help creators, businesses, and entrepreneurs bring their ideas to life through clean audio, stunning visuals, and functional websites.
+        </p>
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary btn--glow" href="#contact" data-magnet>
+            <span>Let’s Work Together</span>
+          </a>
+          <a class="btn btn--ghost" href="#projects">View My Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section__title reveal">Services Offered</h2>
+        <div class="grid-3">
+          
+          <article class="card reveal">
+            <h3>Podcast Audio Editing</h3>
+            <p>Expert podcast audio editing using Adobe Audition, Audacity, FL Studio and more. I enhance audio quality, remove noise, add music, and deliver professional, engaging episodes ready for publishing.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Podcast Hosting & Distribution</h3>
+            <p>I set up podcast hosting (Anchor, Buzzsprout, Libsyn, Podbean, Acast) and ensure smooth distribution to Spotify, Apple Podcasts, Amazon Music and more, helping your show reach the widest audience possible.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Video Editing</h3>
+            <p>I provide creative and technical video editing: trimming, color grading, transitions, and syncing with audio. From YouTube content to promotional reels, I ensure your videos are polished and compelling.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Website Design & Development</h3>
+            <p>I design and build responsive websites using HTML, CSS, JavaScript, Node.js, and Python. Whether it’s a portfolio, business site, or custom web app, I create modern, user-friendly solutions tailored to your needs.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Frontend & Backend Engineering</h3>
+            <p>I build full-stack web applications, handling both the user interface and the server logic. On the frontend, I craft responsive, interactive experiences using HTML, CSS, and JavaScript. On the backend, I develop robust systems with Node.js, Python, and databases, ensuring your site is fast, secure, and scalable.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Cloud & DevOps</h3>
+            <p>I design and manage cloud infrastructure with a focus on scalability, security, and automation. Using tools like AWS, Docker, and CI/CD pipelines, I ensure smooth deployments and reliable performance for modern applications.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title reveal">My Projects</h2>
+        <div class="work">
+
+          <article class="work__item reveal">
+            <div class="work__art">
+              <a href="https://open.spotify.com/show/3CFjzdRJp9m6q1HKLRVBnb" target="_blank" class="project-image-link">
+                <img src="images/career sis.PNG" alt="caree">
+                <div class="overlay">View Project</div>
+              </a>
+            </div>
+            <div class="work__copy">
+              <h3>Stories by Career Sistas</h3>
+              <p class="description-short">I handle the complete editing and post-production for Stories by Career Sistas, a podcast hosted by Beverly Vanterpool...</p>
+              <p class="description-full" style="display: none;">I handle the complete editing and post-production for Stories by Career Sistas, a podcast hosted by Beverly Vanterpool. My work ensures each episode delivers clear, engaging, and professional audio by removing distractions, balancing sound, and enhancing overall quality. From fine-tuning dialogue to integrating music and effects, I make sure every release meets broadcast standards and resonates with listeners.</p>
+              <button class="see-more-btn" onclick="toggleDescription(this)">See more</button>
+            </div>
+          </article>
+
+          <article class="work__item reveal">
+            <div class="work__art">
+              <a href="https://enterprisedigitalpodcast.com/" target="_blank" class="project-image-link">
+                <img src="images/y7 (1).jpg" alt="Project 2 screenshot">
+                <div class="overlay">View Project</div>
+              </a>
+            </div>
+            <div class="work__copy">
+              <h3>The Enterprise Digital Podcast</h3>
+              <p class="description-short">Join Barclay Rae and Ian Aitchison on their insightful podcast covering the latest trends in digital enterprise...</p>
+              <p class="description-full" style="display: none;">Join Barclay Rae and Ian Aitchison on their insightful podcast, The Enterprise Digital. Launched in 2020, this podcast covers the latest trends and developments in the world of digital enterprise and has already released over 60 episodes. As the editor of the podcast since its inception, I bring a level of technical expertise to ensure a polished and professional final product for listeners. With Barclay and Ian's extensive knowledge and experience, The Enterprise Digital is a must-listen for anyone looking to stay ahead in the world of digital enterprise.</p>
+              <button class="see-more-btn" onclick="toggleDescription(this)">See more</button>
+            </div>
+          </article>
+
+          <article class="work__item reveal">
+            <div class="work__art">
+              <a href="https://example.com/project3" target="_blank" class="project-image-link">
+                <img src="images/y5 (1).jpg" alt="Project 3 screenshot">
+                <div class="overlay">View Project</div>
+              </a>
+            </div>
+            <div class="work__copy">
+              <h3>The skinnies Podcast</h3>
+              <p class="description-short">This is a Personal Project with Ayinke, creating entertaining and thought-provoking content for youth and Generation Z...</p>
+              <p class="description-full" style="display: none;">This is a Personal Project, I and Ayinke (the skinny one, my ever beautiful and gracious co-host on our entertaining and thought-provoking podcast that is geared towards the youth and Generation Z. We delve into a variety of issues affecting young people and provide fresh perspectives and insightful discussions. I handle the editing and distribution of the podcast, while Ayinke assists with promotion. Together, we make a dynamic duo, bringing engaging content to the airwaves and providing a platform for the voices of the next generation. Let's explore the world, one episode at a time!.</p>
+              <button class="see-more-btn" onclick="toggleDescription(this)">See more</button>
+            </div>
+          </article>
+
+          <article class="work__item reveal">
+            <div class="work__art">
+              <a href="https://t.me/footfixtbot" target="_blank" class="project-image-link">
+                <img src="images/tellll.png" alt="Project 4 screenshot">
+                <div class="overlay">View Project</div>
+              </a>
+            </div>
+            <div class="work__copy">
+              <h3>Telegram Football Bot</h3>
+              <p class="description-short">Built a Telegram bot with Node.js for delivering live football scores, fixtures, and updates from top leagues...</p>
+              <p class="description-full" style="display: none;">Built a Telegram bot with Node.js, Express, Telegraf, and Axios, deployed on Render using webhook integration. The bot fetches and delivers live football scores, fixtures, and updates from API-Football, covering top leagues like the Premier League, La Liga, UCL, and NPFL. Features include smooth Telegram messaging, real-time match tracking, and secure backend integration.</p>
+              <button class="see-more-btn" onclick="toggleDescription(this)">See more</button>
+            </div>
+          </article>
+
+          <article class="work__item reveal">
+            <div class="work__art">
+              <a href="https://www.youtube.com/watch?v=Mz-xAVr9i74" target="_blank" class="project-image-link">
+                <img src="images/y9.jpg" alt="Project 5 screenshot">
+                <div class="overlay">View Project</div>
+              </a>
+            </div>
+            <div class="work__copy">
+              <h3>B-Med Connect Podcast</h3>
+              <p class="description-short">I collaborated with Dr. Jasmine Weiss on the B-MED Connect video podcast, featuring Black medical leaders...</p>
+              <p class="description-full" style="display: none;">I collaborated with Dr. Jasmine Weiss on the B-MED Connect video podcast, produced by Black Med Connect, a global network connecting Black physicians and medical trainees. My role included editing and post-production, ensuring professional visuals and crisp audio for every episode. The podcast features prominent Black medical leaders sharing stories of resilience, hard work, and mentorship, helping inspire and guide future practitioners while fostering meaningful connections worldwide.</p>
+              <button class="see-more-btn" onclick="toggleDescription(this)">See more</button>
+            </div>
+          </article>
+
+          <article class="work__item reveal">
+            <div class="work__art">
+              <a href="https://psychopathinyourlife.com/" target="_blank" class="project-image-link">
+                <img src="images/Psychopaths-In-Our-Lives-Cover-300x213.png" alt="Project 5 screenshot">
+                <div class="overlay">View Project</div>
+              </a>
+            </div>
+            <div class="work__copy">
+              <h3>Pyschopath in your life</h3>
+              <p class="description-short">I collaborated with Dianne Emerson to refresh and manage her website and true-crime podcast...</p>
+              <p class="description-full" style="display: none;">I collaborated with Dianne Emerson to refresh and manage her website, while also supporting her true-crime show, Psychopath In Your Life Podcast. From updating content and maintaining the database to syncing episodes seamlessly, I helped keep her digital presence smooth, organized, and listener-friendly.</p>
+              <button class="see-more-btn" onclick="toggleDescription(this)">See more</button>
+            </div>
+          </article>
+          <article class="work__item reveal">
+            <div class="work__art">
+              <a href="https://ctrlaltazure.com/" target="_blank" class="project-image-link">
+                <img src="images/y4 (1).jpg" alt="Project 5 screenshot">
+                <div class="overlay">View Project</div>
+              </a>
+            </div>
+            <div class="work__copy">
+              <h3>Ctrl+Alt+Azure Podcast</h3>
+              <p class="description-short">I worked  with Tobias Zimmergren (Cloud Architecture Content Lead at Microsoft) and Jussi Roine...</p>
+              <p class="description-full" style="display: none;">Join Tobias Zimmergren, a Cloud Architecture Content Lead at Microsoft, and Jussi Roine, CEO and co-founder of Not Bad Security, as they provide valuable insights into the tech world on their podcast. I have been editing this podcast since its launch in 2019, and with over 170 episodes, it has become a trusted source for the latest news and information in the industry. Tobias and Jussi bring a wealth of knowledge and expertise to the table, while I ensure the audio quality is top-notch and ready for listeners to enjoy</p>
+              <button class="see-more-btn" onclick="toggleDescription(this)">See more</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="section cta">
+      <div class="container">
+        <h2 class="cta__title reveal">Want to work with me?</h2>
+        <p class="cta__subtitle reveal">Reach out and let’s create something amazing together.</p>
+
+        <!-- Email -->
+        <a class="btn btn--primary btn--glow reveal" href="mailto:westmxz@gmail.com" data-magnet>
+          <span>westmxz@gmail.com</span>
+        </a>
+
+        <!-- Phone -->
+        <a class="btn btn--primary btn--glow reveal" href="tel:+2347082129053" data-magnet>
+          <span>📞 +23470XXXXXXX</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="btn btn--primary btn--glow reveal" href="https://www.linkedin.com/in/ajibola-samuel-914396123" target="_blank" data-magnet>
+          <span>🔗 LinkedIn Profile</span>
+        </a>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <span class="brand__dot"></span>
+          <span class="brand__text">Samuel</span>
+        </div>
+        <nav class="footer__links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
+        <div class="footer__copy">© <span id="year"></span> Samuel Ajibola. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
